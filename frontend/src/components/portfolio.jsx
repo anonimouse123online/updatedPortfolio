@@ -7,7 +7,7 @@ import sidelineImage from '../assets/sideline.png';
 import cebuBlog from '../assets/cebu.png';
 import calamityImage from '../assets/calamity.png';
 import kurtImage from '../assets/kurt.jpg';
-import resumePDF from '../assets/Kurt_Paul_Perocillo_Resume (2).pdf';
+import resumePDF from '../assets/Kurt_Paul_Perocillo_Resume2025.pdf';
 
 
 const Portfolio = () => {
