@@ -1,0 +1,139 @@
+/* Reset / Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.portfolio-container {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Header */
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-header {
+    flex-direction: row;
+  }
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.header-image {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header-image {
+    margin-top: 0;
+  }
+}
+
+.header-image img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sections */
+.portfolio-section {
+  padding: 2rem;
+  width: 100%;
+}
+
+.skills-section {
+  background-color: #2563eb; /* blue-500 */
+}
+
+.experience-section {
+  background-color: #3b82f6; /* blue-400 */
+}
+
+.certificates-section {
+  background-color: #60a5fa; /* blue-300 */
+}
+
+.portfolio-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.portfolio-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.portfolio-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Experience items */
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.experience-item p {
+  margin: 0.25rem 0;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation bar - Blue background removed */
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (if needed globally) */
+footer {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
