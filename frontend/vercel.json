@@ -15,7 +15,5 @@
       "dest": "/index.html"
     }
   ],
-  "installCommand": "npm install --force",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "cleanUrls": true
 }
