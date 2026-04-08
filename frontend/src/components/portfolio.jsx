@@ -8,6 +8,10 @@ import cebuBlog from '../assets/cebu.png';
 import calamityImage from '../assets/calamity.png';
 import kurtImage from '../assets/kurt.jpg';
 import resumePDF from '../assets/Kurt_Paul_Perocillo_Resume2025.pdf';
+import BisayaLLM from '../assets/BISAYALLM.png'
+import moondream from '../assets/Moondeream.png'
+import oracle from '../assets/oracle.png'
+import tafe from '../assets/tafe.png'
 
 
 const Portfolio = () => {
@@ -104,7 +108,23 @@ const Portfolio = () => {
       tech: ["React", "Node.js", "Express", "MongoDB", "Leaflet.js", "Tailwind"],
       image: calamityImage,
       link: "https://anti-corrupt.vercel.app/"
+    },
+    { 
+      id: 4, 
+      title: "fine-tuned Tinllama", 
+      description: "Realtime bisaya translation", 
+      tech: ["  Tinyllama", "LoRA", "Google Colab"],
+      image: BisayaLLM,
+    },
+    { 
+      id: 5, 
+      title: "fine-tuned Moondream", 
+      description: "Realtime live Filipino sign langiage", 
+      tech: ["  Moondream2", "LoRA", "Google Colab", "kaggle", " Computer Vision", "Real-Time Interference" ],
+      image: moondream,
     }
+    
+    
   ];
 
   const experiences = [
@@ -121,8 +141,35 @@ const Portfolio = () => {
       company: "SidelineAU",
       period: "2024-2025",
       description: "Built a full-stack job-matching platform enabling clients to post jobs and job seekers to apply seamlessly. Implemented dashboards, filtering, and notifications using React, Node.js, Express, MongoDB, Tailwind, and Vite."
+    },
+    {
+      id: 3,
+      role: "Ai/Web Developer",
+      company: "NarrogenAI",
+      period: "2025-2026",
+      description: "Build a website then finetuned ai for story making and use ai wrapper/chatgpt for video making"
+    },
+    {
+      id: 4,
+      role: "Software Engineer",
+      company: "Ayoo",
+      period: "2025-2026",
+      description: "Developed and maintain scalable web and mobile solutions using react native improving performance and user experience"
     }
+
   ];
+  const certification = [
+    {
+      id:1,
+      name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      image: oracle
+    },
+    {
+      id:2,
+      name:"Introduction to Artificial Intelligence – TAFE ",
+      image: tafe
+    } 
+  ]
 
   return (
     <>
@@ -133,6 +180,7 @@ const Portfolio = () => {
             <li><a href="#home">home</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#experiences">experiences</a></li>
+            <li><a href="#certification">certification</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#contact">contact</a></li>
             <li 
@@ -226,6 +274,20 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+      #certification
+      <section id="certification" className="section-scrollable">
+        <div className="section-container">
+          <h2 className="section-title">Certification</h2>
+          <div className="certification-list">
+            {certification.map(cert => (
+              <div key={cert.id} className="certification-item">
+                <img src={cert.image} alt={cert.name} className="certification-image" />
+                <p className="certification-name">{cert.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="about" className="about-section">
@@ -267,6 +329,8 @@ const Portfolio = () => {
                   <span className="skill-item">Git</span>
                   <span className="skill-item">MongoDB</span>
                   <span className="skill-item">Express</span>
+                  <span className="skill-item">LLM Fine-Tuning</span>
+                  <span className="skill-item">HuggingFace Transformers </span>
                 </div>
               </div>
               
@@ -276,7 +340,7 @@ const Portfolio = () => {
                   <span className="stat-label">Projects</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">3+</span>
+                  <span className="stat-number">4+</span>
                   <span className="stat-label">Years Exp</span>
                 </div>
                 <div className="stat-item">
